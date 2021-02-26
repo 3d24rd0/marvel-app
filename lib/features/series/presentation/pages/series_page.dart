@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:marvel/core/route/bloc/router_bloc.dart';
+import 'package:marvel/core/route/custom_router.dart';
 import 'package:marvel/features/series/presentation/bloc/series_bloc.dart';
 import 'package:marvel/features/series/presentation/widgets/ironman_animation.dart';
 import 'package:marvel/features/series/presentation/widgets/list_series.dart';
@@ -14,6 +16,62 @@ class SeriesPage extends StatelessWidget {
       },
       child: Scaffold(
         backgroundColor: Theme.of(context).backgroundColor,
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text(
+            "Creators",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Montserrat',
+            ),
+          ),
+          leading: Builder(
+            builder: (context) => IconButton(
+              icon: new Icon(Icons.menu),
+              onPressed: () => Scaffold.of(context).openDrawer(),
+            ),
+          ),
+        ),
+        drawer: Drawer(
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: <Widget>[
+              DrawerHeader(
+                child: Image.asset(
+                  "assets/marvel.jpeg",
+                  fit: BoxFit.contain,
+                ),
+              ),
+              ListTile(
+                leading: Icon(Icons.settings_sharp),
+                title: Text(
+                  "Settings",
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                  ),
+                ),
+                onTap: () {
+                  getIt<RouterBloc>()
+                      .add(GoBackOrNavigateEvent(CustomRouter.series));
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.contact_support),
+                title: Text(
+                  "Support",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Montserrat',
+                  ),
+                ),
+                onTap: () {
+                  getIt<RouterBloc>()
+                      .add(GoBackOrNavigateEvent(CustomRouter.series));
+                },
+              ),
+            ],
+          ),
+        ),
         body: SafeArea(
           child: BlocProvider<SeriesBloc>(
             create: (_) => getIt<SeriesBloc>()..add(LoadEvent()),
