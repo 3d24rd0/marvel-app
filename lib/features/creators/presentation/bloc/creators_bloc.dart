@@ -1,7 +1,10 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
+import 'package:marvel/core/route/bloc/router_bloc.dart';
+import 'package:marvel/core/route/custom_router.dart';
 import 'package:marvel/features/creators/domain/entities/creators.dart';
 import 'package:marvel/features/creators/domain/usecases/get_creators_for_serie_usecase.dart';
+import 'package:marvel/service_locator.dart';
 import 'package:meta/meta.dart';
 import 'dart:developer' as developer;
 part 'creators_event.dart';

@@ -28,3 +28,21 @@ class CreatorsEvent extends RouterEvent {
     navigatorKey.pushNamed(CustomRouter.creators, arguments: serieId);
   }
 }
+
+class GoBackOrNavigateEvent extends RouterEvent {
+  final String route;
+
+  GoBackOrNavigateEvent(this.route);
+
+  @override
+  Stream<RouterState> applyAsync(
+      {RouterState currentState,
+      RouterBloc bloc,
+      NavigatorState navigatorKey}) async* {
+    if (navigatorKey.canPop()) {
+      navigatorKey.pop();
+    } else {
+      navigatorKey.pushNamed(route);
+    }
+  }
+}
