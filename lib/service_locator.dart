@@ -12,7 +12,7 @@ Future<void> setUpLocator() async {
   // Features
   _core();
   _seriesFeature();
-  _creatorsFeature();
+  // _creatorsFeature();
 }
 
 void _core() {

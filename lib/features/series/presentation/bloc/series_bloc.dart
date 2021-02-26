@@ -1,9 +1,7 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
-import 'package:marvel/core/route/bloc/router_bloc.dart';
 import 'package:marvel/features/series/domain/entities/series.dart';
 import 'package:marvel/features/series/domain/usecases/get_series_usecase.dart';
-import 'package:marvel/service_locator.dart';
 import 'package:meta/meta.dart';
 import 'dart:developer' as developer;
 part 'series_event.dart';
