@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:marvel/features/creators/presentation/pages/creators_page.dart';
 import 'package:marvel/features/series/presentation/pages/series_page.dart';
+import 'package:marvel/features/settings/presentation/pages/settings_page.dart';
+import 'package:marvel/features/support/presentation/pages/support_page.dart';
 
 class CustomRouter {
   static const series = "/";
   static const creators = "/creators";
+  static const settigns = "/settigns";
+  static const support = "/support";
 
   static MaterialPageRoute generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -16,6 +20,12 @@ class CustomRouter {
             builder: (_) => CreatorsPage(
                   serieId: settings.arguments,
                 ));
+        break;
+      case CustomRouter.settigns:
+        return MaterialPageRoute(builder: (_) => SettingsPage());
+        break;
+      case CustomRouter.support:
+        return MaterialPageRoute(builder: (_) => SupportPage());
         break;
       default:
         return MaterialPageRoute(builder: (_) => Container());

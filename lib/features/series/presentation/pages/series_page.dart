@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:marvel/core/route/bloc/router_bloc.dart';
-import 'package:marvel/core/route/custom_router.dart';
 import 'package:marvel/features/series/presentation/bloc/series_bloc.dart';
 import 'package:marvel/features/series/presentation/widgets/ironman_animation.dart';
 import 'package:marvel/features/series/presentation/widgets/list_series.dart';
@@ -19,7 +18,7 @@ class SeriesPage extends StatelessWidget {
         appBar: AppBar(
           centerTitle: true,
           title: Text(
-            "Creators",
+            "Marvel",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontFamily: 'Montserrat',
@@ -51,8 +50,7 @@ class SeriesPage extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
-                  getIt<RouterBloc>()
-                      .add(GoBackOrNavigateEvent(CustomRouter.series));
+                  getIt<RouterBloc>().add(SettingsEvent());
                 },
               ),
               ListTile(
@@ -65,8 +63,7 @@ class SeriesPage extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
-                  getIt<RouterBloc>()
-                      .add(GoBackOrNavigateEvent(CustomRouter.series));
+                  getIt<RouterBloc>().add(SupportEvent());
                 },
               ),
             ],

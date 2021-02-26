@@ -7,10 +7,11 @@ abstract class RouterEvent {
 
 class SeriesEvent extends RouterEvent {
   @override
-  Stream<RouterState> applyAsync(
-      {RouterState currentState,
-      RouterBloc bloc,
-      NavigatorState navigatorKey}) async* {
+  Stream<RouterState> applyAsync({
+    RouterState currentState,
+    RouterBloc bloc,
+    NavigatorState navigatorKey,
+  }) async* {
     navigatorKey.pushNamed(CustomRouter.series);
   }
 }
@@ -21,11 +22,34 @@ class CreatorsEvent extends RouterEvent {
   CreatorsEvent(this.serieId);
 
   @override
-  Stream<RouterState> applyAsync(
-      {RouterState currentState,
-      RouterBloc bloc,
-      NavigatorState navigatorKey}) async* {
+  Stream<RouterState> applyAsync({
+    RouterState currentState,
+    RouterBloc bloc,
+    NavigatorState navigatorKey,
+  }) async* {
     navigatorKey.pushNamed(CustomRouter.creators, arguments: serieId);
+  }
+}
+
+class SettingsEvent extends RouterEvent {
+  @override
+  Stream<RouterState> applyAsync({
+    RouterState currentState,
+    RouterBloc bloc,
+    NavigatorState navigatorKey,
+  }) async* {
+    navigatorKey.pushNamed(CustomRouter.settigns);
+  }
+}
+
+class SupportEvent extends RouterEvent {
+  @override
+  Stream<RouterState> applyAsync({
+    RouterState currentState,
+    RouterBloc bloc,
+    NavigatorState navigatorKey,
+  }) async* {
+    navigatorKey.pushNamed(CustomRouter.support);
   }
 }
 
