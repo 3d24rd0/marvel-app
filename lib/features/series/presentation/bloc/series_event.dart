@@ -62,6 +62,6 @@ class GoToCreators extends SeriesEvent {
 
   @override
   Stream<SeriesState> applyAsync({currentState, bloc}) async* {
-    // getIt<RouterBloc>().add(CreatorsEvent(serieId));
+    getIt<RouterBloc>().add(CreatorsEvent(serieId));
   }
 }
