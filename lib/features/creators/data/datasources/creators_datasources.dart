@@ -61,13 +61,16 @@ class CreatorsDataSourceMarvel implements CreatorsDataSource {
     Digest md5Result = md5.convert(bytes);
 
     Map<String, String> query = {
+      "contains": "hardcover",
+      "orderBy": "title",
       "apikey": publicKey,
       "ts": ts,
-      "hash": md5Result.toString(),
+      "hash": md5Result.toString()
     };
 
     try {
-      final response = await _generateGetResponse(query, creatorsBySeriePath.replaceAll("{seriesId}", serieId));
+      final response = await _generateGetResponse(
+          query, creatorsBySeriePath.replaceAll("{seriesId}", serieId));
 
       if (response.statusCode == 200) {
         CreatorsDataWrapperModel wrapper =

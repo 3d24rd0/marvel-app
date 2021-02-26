@@ -32,7 +32,7 @@ class LoadSeries extends SeriesEvent {
   Stream<SeriesState> applyAsync(
       {SeriesState currentState, SeriesBloc bloc}) async* {
     final eSeries = await bloc.getSeriesUsecase(
-      GetSeriesParams(limit: 20, offset: currentState.series.length ~/ 20),
+      GetSeriesParams(limit: 20, offset: 0),
     );
     eSeries.fold(
       (failure) => Future.delayed(Duration(seconds: 2), () {
@@ -50,8 +50,9 @@ class AddSeries extends SeriesEvent {
 
   @override
   Stream<SeriesState> applyAsync({currentState, bloc}) async* {
-    yield currentState.copyWith(
-        series: currentState.series..addAll(listSeries));
+    final series = currentState.series;
+    series.addAll(listSeries);
+    yield currentState.copyWith(series: series);
   }
 }
 
@@ -63,5 +64,58 @@ class GoToCreators extends SeriesEvent {
   @override
   Stream<SeriesState> applyAsync({currentState, bloc}) async* {
     getIt<RouterBloc>().add(CreatorsEvent(serieId));
+  }
+}
+
+class RefreshSeriesEvent extends SeriesEvent {
+  final RefreshController controller;
+
+  RefreshSeriesEvent(this.controller);
+
+  @override
+  Stream<SeriesState> applyAsync({currentState, bloc}) async* {
+    yield currentState.copyWith(series: List.empty());
+    final eSeries = await bloc.getSeriesUsecase(
+      GetSeriesParams(limit: 20, offset: 0),
+    );
+
+    var series = eSeries.fold(
+      (failure) {
+        controller.refreshFailed();
+        return currentState.series;
+      },
+      (series) {
+        controller.refreshCompleted();
+        return series;
+      },
+    );
+    yield currentState.copyWith(series: series);
+  }
+}
+
+class LoadSeriesEvent extends SeriesEvent {
+  final RefreshController controller;
+
+  LoadSeriesEvent(this.controller);
+
+  @override
+  Stream<SeriesState> applyAsync({currentState, bloc}) async* {
+    final offset = currentState.series.length ~/ 20;
+
+    final eSeries = await bloc.getSeriesUsecase(
+      GetSeriesParams(limit: 20, offset: offset),
+    ).timeout(Duration(seconds: 10),onTimeout: () => Left(Timeout()),);
+
+    var series = eSeries.fold(
+      (failure) {
+        controller.loadFailed();
+        return currentState.series;
+      },
+      (series) {
+        controller.loadComplete();
+        return currentState.series..addAll(series);
+      },
+    );
+    yield currentState.copyWith(series: series);
   }
 }
