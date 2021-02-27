@@ -84,7 +84,7 @@ class _ListSeriesState extends State<ListSeries> {
                             child: Image.network(
                               state.series[index].thumbnail.getUri(),
                               fit: BoxFit.scaleDown,
-                              height: 200.0,
+                              height: 170.0,
                               width: 130.0,
                             ),
                           ),
