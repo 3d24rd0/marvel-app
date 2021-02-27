@@ -100,7 +100,7 @@ class LoadSeriesEvent extends SeriesEvent {
 
   @override
   Stream<SeriesState> applyAsync({currentState, bloc}) async* {
-    final offset = currentState.series.length ~/ 20;
+    final offset = currentState.series.length;// ~/ 20;
 
     final eSeries = await bloc.getSeriesUsecase(
       GetSeriesParams(limit: 20, offset: offset),
