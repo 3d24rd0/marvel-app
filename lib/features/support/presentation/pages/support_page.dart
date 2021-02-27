@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marvel/localization.dart';
 import 'package:marvel/core/route/bloc/router_bloc.dart';
 import 'package:marvel/core/route/custom_router.dart';
 import 'package:marvel/service_locator.dart';
@@ -11,7 +12,7 @@ class SupportPage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "Support",
+          AppLocalizations.of(context).translate('support'),
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontFamily: 'Montserrat',
@@ -25,7 +26,9 @@ class SupportPage extends StatelessWidget {
         ),
       ),
       body: SafeArea(
-          child: Center(child: Text("Support"),)),
+          child: Center(
+        child: Text(AppLocalizations.of(context).translate('support')),
+      )),
     );
   }
 }

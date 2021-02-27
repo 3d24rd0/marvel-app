@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:marvel/localization.dart';
 import 'package:marvel/core/route/bloc/router_bloc.dart';
 import 'package:marvel/features/series/presentation/bloc/series_bloc.dart';
 import 'package:marvel/features/series/presentation/widgets/ironman_animation.dart';
@@ -44,7 +45,7 @@ class SeriesPage extends StatelessWidget {
               ListTile(
                 leading: Icon(Icons.settings_sharp),
                 title: Text(
-                  "Settings",
+                  AppLocalizations.of(context).translate('settings'),
                   style: TextStyle(
                     fontFamily: 'Montserrat',
                   ),
@@ -56,9 +57,8 @@ class SeriesPage extends StatelessWidget {
               ListTile(
                 leading: Icon(Icons.contact_support),
                 title: Text(
-                  "Support",
+                  AppLocalizations.of(context).translate('support'),
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
                     fontFamily: 'Montserrat',
                   ),
                 ),

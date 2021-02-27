@@ -7,7 +7,7 @@ import 'package:marvel/features/support/presentation/pages/support_page.dart';
 class CustomRouter {
   static const series = "/";
   static const creators = "/creators";
-  static const settigns = "/settigns";
+  static const settings = "/settings";
   static const support = "/support";
 
   static MaterialPageRoute generateRoute(RouteSettings settings) {
@@ -21,7 +21,7 @@ class CustomRouter {
                   serieId: settings.arguments,
                 ));
         break;
-      case CustomRouter.settigns:
+      case CustomRouter.settings:
         return MaterialPageRoute(builder: (_) => SettingsPage());
         break;
       case CustomRouter.support:

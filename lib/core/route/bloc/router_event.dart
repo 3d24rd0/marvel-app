@@ -38,7 +38,7 @@ class SettingsEvent extends RouterEvent {
     RouterBloc bloc,
     NavigatorState navigatorKey,
   }) async* {
-    navigatorKey.pushNamed(CustomRouter.settigns);
+    navigatorKey.pushNamed(CustomRouter.settings);
   }
 }
 
