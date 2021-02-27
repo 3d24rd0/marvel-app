@@ -1,0 +1,396 @@
+{
+  "code": 200,
+  "status": "Ok",
+  "copyright": "© 2021 MARVEL",
+  "attributionText": "Data provided by Marvel. © 2021 MARVEL",
+  "attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2021 MARVEL</a>",
+  "etag": "c71664c9ccf825679005d5cd7817ed65e03ae44d",
+  "data": {
+    "offset": 0,
+    "limit": 20,
+    "total": 4,
+    "count": 4,
+    "results": [
+      {
+        "id": 11765,
+        "firstName": "Christos",
+        "middleName": "",
+        "lastName": "Gage",
+        "suffix": "",
+        "fullName": "Christos Gage",
+        "modified": "2016-05-05T11:54:36-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/11765",
+        "comics": {
+          "available": 438,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11765/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/84348",
+              "name": "2020 Machine Man (2020) #1"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/84671",
+              "name": "2020 Machine Man (2020) #1 (Variant)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/84672",
+              "name": "2020 Machine Man (2020) #1 (Variant)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/84349",
+              "name": "2020 Machine Man (2020) #2"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/84974",
+              "name": "2020 Machine Man (2020) #2 (Variant)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/45764",
+              "name": "A+X VOL. 2: = AMAZING TPB (MARVEL NOW) (Trade Paperback)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/43511",
+              "name": "A+X (2012) #12"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/47465",
+              "name": "Age of Ultron Companion (Trade Paperback)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/47911",
+              "name": "Amazing Spider-Man Vol. 2: Spider-Verse Prelude (Trade Paperback)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/55255",
+              "name": "Amazing Spider-Man: Worldwide Vol. 3 (Trade Paperback)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/55312",
+              "name": "The Amazing Spider-Man (2015) #14"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/55313",
+              "name": "The Amazing Spider-Man (2015) #15"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/55314",
+              "name": "The Amazing Spider-Man (2015) #16"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51326",
+              "name": "The Amazing Spider-Man (2014) #16"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/53057",
+              "name": "The Amazing Spider-Man (2014) #16 (Doyle Wom Variant)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51330",
+              "name": "The Amazing Spider-Man (2014) #18"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/53639",
+              "name": "The Amazing Spider-Man (2014) #18 (Campion Nyc Variant)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/55318",
+              "name": "The Amazing Spider-Man (2015) #20"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/55319",
+              "name": "The Amazing Spider-Man (2015) #21"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/55320",
+              "name": "The Amazing Spider-Man (2015) #22"
+            }
+          ],
+          "returned": 20
+        },
+        "series": {
+          "available": 173,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11765/series",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/26024",
+              "name": " Superior Spider-Man Vol. 2: Otto-matic (2019)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/29695",
+              "name": "2020 Machine Man (2020)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/16450",
+              "name": "A+X (2012 - 2014)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/17272",
+              "name": "A+X VOL. 2: = AMAZING TPB (MARVEL NOW) (2013)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/17929",
+              "name": "Age of Ultron Companion (2014)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/14350",
+              "name": "AGE OF ULTRON HC (WITH DIGITAL CODE) (2011 - Present)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/454",
+              "name": "Amazing Spider-Man (1999 - 2013)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/21690",
+              "name": "Amazing Spider-Man Annual (2016)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/20688",
+              "name": "AMAZING SPIDER-MAN VOL. 2 HC (2016)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/18096",
+              "name": "Amazing Spider-Man Vol. 2: Spider-Verse Prelude (2015)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/27686",
+              "name": "Amazing Spider-Man: Red Goblin (2019)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/25678",
+              "name": "Amazing Spider-Man: Red Goblin (2018)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/22857",
+              "name": "Amazing Spider-Man: The Clone Conspiracy (2017)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/23446",
+              "name": "Amazing Spider-Man: Worldwide Vol. 2 (2017)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/23966",
+              "name": "Amazing Spider-Man: Worldwide Vol. 3 (2018)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/20412",
+              "name": "Amazing Spider-Man: Worldwide Vol. 3 (2016)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/21654",
+              "name": "Amazing Spider-Man: Worldwide Vol. 5 (2017)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/22109",
+              "name": "Amazing Spider-Man: Worldwide Vol. 7 (2018)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/24322",
+              "name": "Amazing-Spider-Man: Worldwide Vol. 8 (2018)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/18285",
+              "name": "Annihilation (2014)"
+            }
+          ],
+          "returned": 20
+        },
+        "stories": {
+          "available": 559,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11765/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/2812",
+              "name": "1 of 1",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/5910",
+              "name": "1 of 4 - Enemies of the Crown",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/5912",
+              "name": "2 of 4 - Enemies of the Crown",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/5914",
+              "name": "3 of 4 - Enemies of the Crown",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/5916",
+              "name": "4 of 4 - Enemies of the Crown",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/6270",
+              "name": "1 of 1 - Casualties of War",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/6272",
+              "name": "1 of 1 - Casualties of War",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/7850",
+              "name": "Firelord/Terrax",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/32318",
+              "name": "Planet Hulk 1 of 2; WWH SLUG",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/32451",
+              "name": "3XLS 1 of 3",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/32556",
+              "name": "Planet Hulk 2 of 2; WWH SLUG",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/32658",
+              "name": "1 of 4 - 4XLS",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/32672",
+              "name": "3XLS 2 of 3",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/32712",
+              "name": "Union Jack 1-4",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/33043",
+              "name": "Annihilation Conquest: Quasar (2007) #2",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/33057",
+              "name": "3XLS 3 of 3",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/33147",
+              "name": "The Extremists 4 of 5",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/33276",
+              "name": "Heart of Ice 3 of 4",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/33425",
+              "name": "Annihilation Conquest: Quasar (2007) #3",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/33427",
+              "name": "Annihilation Conquest: Quasar (2007) #4",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 20
+        },
+        "events": {
+          "available": 18,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11765/events",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/314",
+              "name": "Age of Ultron"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/229",
+              "name": "Annihilation"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/293",
+              "name": "Annihilation: Conquest"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/310",
+              "name": "Avengers VS X-Men"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/238",
+              "name": "Civil War"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/318",
+              "name": "Dark Reign"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/332",
+              "name": "Dead No More: The Clone Conspiracy"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/302",
+              "name": "Fear Itself"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/251",
+              "name": "House of M"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/336",
+              "name": "Secret Empire"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/269",
+              "name": "Secret Invasion"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/309",
+              "name": "Shattered Heroes"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/273",
+              "name": "Siege"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/305",
+              "name": "Spider-Island"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/321",
+              "name": "Spider-Verse"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/276",
+              "name": "War of Kings"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/277",
+              "name": "World War Hulk"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/308",
+              "name": "X-Men: Regenesis"
+            }
+          ],
+          "returned": 18
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/11765/christos_gage?utm_campaign=apiRef&utm_source=5e98a3f3bced6bc7072135ba10c4a2d4"
+          }
+        ]
+      }
+    ]
+  }
+}
