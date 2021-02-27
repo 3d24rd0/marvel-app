@@ -1,5 +1,7 @@
 name: Flutter release
-on: [ pull_request_target ]
+on:
+  pull_request:
+    branches: [ main ]
 jobs:
   releaseUbuntu:
     name: Test, build and release android
