@@ -30,3 +30,14 @@ flutter:
     - assets/
     - i18n/es.json
     - i18n/en.json
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Bold.otf
+          weight: 700
+        - asset: assets/fonts/Montserrat-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/Montserrat-Regular.otf
+          weight: 400
+        - asset: assets/fonts/Montserrat-Light.otf
+          weight: 300
