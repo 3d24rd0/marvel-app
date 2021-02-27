@@ -48,11 +48,6 @@ class SeriesDataSourceMarvel implements SeriesDataSource {
   Future<Response> _generateGetResponse(
       Map<String, String> query, String path) async {
     var uri = Uri.https(domainApi, path, query);
-
-    // Map<String, String> headers = {
-    //   HttpHeaders.contentTypeHeader: "application/json; charset=utf-8",
-    //   HttpHeaders.acceptHeader: "application/json; charset=utf-8",
-    // };
     final Response response = await get(uri);
     return response;
   }
@@ -67,6 +62,7 @@ class SeriesDataSourceMarvel implements SeriesDataSource {
     Digest md5Result = md5.convert(bytes);
 
     Map<String, String> query = {
+      "orderBy": "title",
       "offset": offset.toString(),
       "limit": limit.toString(),
       "apikey": public,
