@@ -61,8 +61,6 @@ class CreatorsDataSourceMarvel implements CreatorsDataSource {
     Digest md5Result = md5.convert(bytes);
 
     Map<String, String> query = {
-      "contains": "hardcover",
-      "orderBy": "title",
       "apikey": publicKey,
       "ts": ts,
       "hash": md5Result.toString()
